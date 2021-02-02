@@ -34,4 +34,4 @@ public class Main
       else System.out.println(Введите корректный бал от 1 до 100);
       
 	}
-}22
+}
