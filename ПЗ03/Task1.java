@@ -9,6 +9,6 @@ public class Main
       if (num<100) {
       System.out.println("Less");
       } else System.out.println("Not less");
- ццццццццццццццццццццц
+
 	}
 }
