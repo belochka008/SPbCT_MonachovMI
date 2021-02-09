@@ -17,7 +17,7 @@ class Main
                     arr[i] = arr[i+1];
                     arr[i+1] = temp;
                     isSorted = false;
-                }
+                }j
             }
             for (int i=0; i<=n-2; i=i+2)
             {
