@@ -1,4 +1,8 @@
-  Person undef = new Person();
+package com.company;
+import java.util.Arrays;
+public class Main {
+    public static void main(String[] args) {
+        Person undef = new Person();
         undef.displayInfo();
 
         Person tom = new Person("Tom");
