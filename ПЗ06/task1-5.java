@@ -2,21 +2,30 @@ package com.company;
 import java.util.Arrays;
 class Main {
     public static void main(String[] args) {
+  Person tom = new Person();
+        Person bob = new Person();
 
-        Person kate = new Person("Kate", 32);
-        kate.displayInfo();
+        tom.displayId();    // Id = 1
+        bob.displayId();    // Id = 2
+        System.out.println(Person.counter); // 3
+
+        // изменяем Person.counter
+        Person.counter = 8;
+
+        Person sam = new Person();
+        sam.displayId();    // Id = 8
     }
 }
 class Person{
 
-    String name;
-    int age;
+    private int id;
+    static int counter=1;
 
-    Person(String name, int age){
-        this.name = name;
-        this.age = age;
+    Person(){
+        id = counter++;
     }
-    void displayInfo(){
-        System.out.printf("Name: %s \t Age: %d \n", name, age);
+    public void displayId(){
+
+        System.out.printf("Id: %d \n", id);
     }
 }
