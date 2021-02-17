@@ -3,20 +3,28 @@ import java.util.Arrays;
 class Main {
     public static void main(String[] args) {
 
-        Person kate = new Person("Kate", 32);
-        kate.displayInfo();
+    Person tom = new Person();
+        Person bob = new Person();
+         
+        tom.displayId();    // Id = 105
+        bob.displayId();    // Id = 106
     }
 }
 class Person{
-
-    String name;
-    int age;
-
-    Person(String name, int age){
-        this.name = name;
-        this.age = age;
+     
+    private int id;
+    static int counter;
+     
+    static{
+        counter = 105;
+        System.out.println("Static initializer");
     }
-    void displayInfo(){
-        System.out.printf("Name: %s \t Age: %d \n", name, age);
+    Person(){
+        id=counter++;
+        System.out.println("Constructor");
+    }
+    public void displayId(){
+     
+        System.out.printf("Id: %d \n", id);
     }
 }
