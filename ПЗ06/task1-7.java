@@ -2,21 +2,41 @@ package com.company;
 import java.util.Arrays;
 class Main {
     public static void main(String[] args) {
-
-        Person kate = new Person("Kate", 32);
-        kate.displayInfo();
+Person tom = new Person("Tom");
+        tom.display();
+        Person sam = new Employee("Sam", "Oracle");
+        sam.display();
     }
 }
-class Person{
-
-    String name;
-    int age;
-
-    Person(String name, int age){
-        this.name = name;
-        this.age = age;
+class Person {
+     
+    private String name;
+     
+    public String getName() { return name; }
+    
+    public Person(String name){
+     
+        this.name=name;
     }
-    void displayInfo(){
-        System.out.printf("Name: %s \t Age: %d \n", name, age);
+  
+    public void display(){
+         
+        System.out.printf("Person %s \n", name);
+    }
+}
+ 
+class Employee extends Person{
+ 
+    private String company;
+     
+    public Employee(String name, String company) {
+     
+        super(name);
+        this.company = company;
+    }
+    @Override
+    public void display(){
+         
+        System.out.printf("Employee %s works in %s \n", super.getName(), company);
     }
 }
