@@ -1,0 +1,19 @@
+package com.company;
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Введите число");
+        int price = scan.nextInt();
+        int counter = 0;
+        for (int i = 1 ; i < price; i++) {
+            price= price / 10;
+
+            if (price%2==0) {
+                counter = counter + 1;
+            }
+        }
+        System.out.println("Количество четных цифр = " +counter);
+    }
+}
+

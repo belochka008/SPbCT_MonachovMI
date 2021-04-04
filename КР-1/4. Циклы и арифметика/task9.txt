@@ -1,0 +1,12 @@
+package com.company;
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Введите курс доллара в рублях");
+        double price = scan.nextInt();
+        for (int i=1; i<=100 ;i++) {
+            System.out.println(i + "$ - " + price + "руб - " + i*price/20 + "кг конфет");
+        }
+    }
+}

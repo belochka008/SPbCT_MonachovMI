@@ -1,0 +1,11 @@
+package com.company;
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Введите температуру в градусах Цельсия");
+        Scanner scan = new Scanner(System.in);
+        double t = scan.nextInt();
+        double out = t * 1.8 + 32;
+        System.out.println("Температура в градусах Фарингейта = " + out );
+    }
+}

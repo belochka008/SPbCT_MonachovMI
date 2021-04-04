@@ -1,0 +1,22 @@
+package com.company;
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Введите число");
+        Scanner scan = new Scanner(System.in);
+        int i = scan.nextInt();
+        if (i >= 2 && i <= 5) {
+            i = i + 100;
+            System.out.println("Ваше число " + i); }
+        else if (i > 7 && i < 40) {
+            i = i - 100;
+            System.out.println("Ваше число " + i); }
+        else if (i < 0 || i > 3000){
+            i = i * 3;
+            System.out.println("Ваше число " + i); }
+        else {
+            i = 0;
+            System.out.println("Ваше число " + i);}
+
+        }
+    }

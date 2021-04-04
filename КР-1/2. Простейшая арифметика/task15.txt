@@ -1,0 +1,12 @@
+package com.company;
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Введите сумму вклада в банк и годовой процент");
+        Scanner scan = new Scanner(System.in);
+        int s = scan.nextInt();
+        int g = scan.nextInt();
+        int s5 = s + (g*5);
+        System.out.println("Cумма вклада через 5 лет " + s5);
+    }
+}
