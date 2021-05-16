@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:orientation="vertical" android:background="@color/screen_bkg_color">
+
+    <TextView
+        style="@style/TextViewStyle1"
+
+        android:layout_width="fill_parent"
+        android:layout_height="55mm"
+        android:text="@string/hello" />
+    <TextView
+        style="@style/TextViewStyle2"
+
+        android:layout_width="fill_parent"
+        android:layout_height="55mm"
+        android:text="LolBonch" />
+</LinearLayout>
